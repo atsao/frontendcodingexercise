@@ -1,25 +1,25 @@
 # Front End Coding Exercise
 
-For this exercise, you will be developing (from scratch) a JavaScript based system to present a DHTML invitation on a website to sign up for a mailing list. This system should (at a minimum):
+For this exercise, you will be developing (from scratch) a JavaScript based simulation of a farm.
 
- - Be able to trigger the invitation only after the user has been on the site for x seconds.
- - Be able to trigger the invite after a certain number of pages have been visited.
- - Allow for easy customization of the invitation.
+On this farm, there should be several types of animals. These animals will wander around and get hungry over time. You will feed them to reset their state. You should be able to tell visually that an animal is hungry.
 
-The invitation dialog itself should be DHTML based and use best practices for CSS and HTML. Your JavaScript should be clean, and use OO best practices. Please do not use any 3rd party libraries like jQuery, Angular, React, or others.
+In the example mockup the yellow animals are not hungry, but the blue ones are hungry. 
 
-Things to keep in mind:
+Without using any frameworks or helper libraries, please build this farm with the following in mind:
 
- - Build tools: Why not use a build system to streamline your testing, minify and check your code? Any will do.
- - SASS/LESS? I think so!
- - Build for maintainability!
- - Comment your code
- - Tests? Why not!
- - If you feel like it, go above and beyond! This is an opportunity for you to show us what you can do.
+- Use HTML Canvas to render the farm. 
+- The animals should each be instances of an animal of the correct type (e.g. Cow, Chicken), derived from a base Animal type.
+- The animals should get hungry over time, represented by a change in colour.
+- You should be able to reset the animal's hunger by clicking on it to feed it.
+- The animals should wander around the farm.
  
+Structure, format, and comments in your code are important for communicating your approach to the problem.
+
+Show us
 # Mockup
 
-![Mockup](https://raw.githubusercontent.com/alexsaves/frontendcodingexercise/master/popup.png "Mockup")
+![Mockup](https://raw.githubusercontent.com/billcowan/frontendcodingexercise/master/mockup.png "Mockup")
 
 # Next Steps
 
