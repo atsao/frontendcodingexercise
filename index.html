@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farm</title>
+  <!-- <link rel="stylesheet" href="/assets/css/styles.css" /> -->
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+    
+    #farm {
+      background: green;
+      height: 300px;
+      position: relative;
+      width: 300px;
+    }
+
+    .animal {
+      cursor: pointer;
+      display: block;
+      height: 10px;
+      width: 10px;
+      position: absolute;
+      transition: all 1.5s ease-out;
+    }
+
+    .pig {
+      background: pink;
+      border-radius: 25%;
+      height: 30px;
+      width: 40px;
+    }
+
+    .chicken {
+      background: #eee;
+      border-top: solid 1px red;
+    }
+
+    .hungry {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Farm</h1>
+    <a href="#" class="btn animal-btn" data-animal-creator-fxn="Pig">Add Pig</a>
+    <a href="#" class="btn animal-btn" data-animal-creator-fxn="Chicken">Add Chicken</a>
+    <!-- <canvas id="farm" height="300" width="300"></canvas> -->
+    <div id="farm"></div>
+  </div>
+
+  <!-- APP FILES -->
+  <script src="Animal.js"></script>
+  <script src="Pig.js"></script>
+  <script src="Chicken.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
