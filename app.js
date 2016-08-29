@@ -2,6 +2,7 @@ window.onload = function() {
   var buttons = document.querySelectorAll('.animal-btn');
   var farm = document.getElementById('farm');
 
+  // Add event handlers for creating new animals
   Array.prototype.forEach.call(buttons, function(button, i) {
     button.onclick = function(e) {
       var animalFunctionName = this.dataset.animalCreatorFxn;

@@ -6,6 +6,7 @@ var Chicken = function(top, left) {
 Chicken.prototype = Object.create(Animal.prototype);
 Chicken.prototype.constructor = Chicken;
 
+// Chickens get hungrier faster
 Chicken.prototype.increaseHunger = function() {
   if (this.hunger > 5) {
     this.node.classList.add('hungry');

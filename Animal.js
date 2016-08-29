@@ -1,6 +1,5 @@
 var Animal = function(top, left) {
   var context = this;
-  console.log('this: ', this);
   this.node = document.createElement('span');
   this.node.classList.add('animal');
 
@@ -8,11 +7,15 @@ var Animal = function(top, left) {
   this.top = top;
   this.left = left;
 
+  // Set initial position of animal
   this.setPosition(this.top, this.left);
+
+  // Add click event handler to feed animal
   this.node.onclick = function() {
     context.feed();
   }
 
+  // Increase hunger and move animal over time
   setInterval(function() {
     this.increaseHunger();
     this.move();
